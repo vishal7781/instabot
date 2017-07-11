@@ -16,7 +16,7 @@ def init_bot():
                    'A.Get your own details', 'B..Get details of user by username', 'C..get your own recent post',
                    'D..get recent post of user by username ', 'E..Like most recent user post',
                    'F..make comment on user recent post ', 'G..Delete negative comment from recent post',
-                   'H..Create a word cloud of user activity from users posts','\t\t........write exit to leave instabot']
+                   '\t\t........write exit to leave instabot']
 
     instabot = True
 
@@ -58,10 +58,6 @@ def init_bot():
                 insta_username = raw_input("Enter Username::")
                 del_neg_comment(insta_username)
 
-            elif select_option == 'H':
-
-                insta_username='shivam.walia'
-                get_hash_tag(insta_username)
 
 
             elif select_option =='EXIT':
@@ -71,7 +67,7 @@ def init_bot():
         except:
             print ("This is not valid option")
 
-        raw_input("\n\n...................\t\t\tPress enter to continue")
+
 
 #calling insta bot function
 init_bot()
