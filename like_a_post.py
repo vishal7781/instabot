@@ -8,7 +8,7 @@ def like_a_post(insta_username):
     post_id=get_post_id(insta_username)
     req_url=BASE_URL+'media/%s/likes' % post_id
     payload={'access_token' :APP_ACCESS_TOKEN}
-    print 'GET request url %s' %req_url
+    print 'POST request url %s' %req_url
     like_post=requests.post(req_url,payload).json()#request post to the server and response store in a like_post variable in json format
 
     #check if server respond to our request or not
